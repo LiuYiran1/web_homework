@@ -12,6 +12,7 @@ docker pull flamer800/web_course:backend-latest
 docker run -d -p 3000:80 --name frontend flamer800/web_course:frontend-latest
 docker run -d -p 5173:80 --name backend flamer800/web_course:backend-latest
 ```
+  - **问题**:可能出现前后端通信的问题,如果在登录界面无法注册的话,就分别在github上的Agile_Kanban的front和back目录中运行npm run dev后,点击前端网址即可使用.
 - **附加功能:**用户注册,用户名&密码验证
 - **后端存储数据部分:**将每个用户的用户名和密码存入一个文件中,将每个用户的数据存入以用户id为名的目录,将每个项目的数据存入以项目名称+项目id为名的目录,将每个任务的数据存入以任务id为名的目录中,用txt文件存储任务的描述和完成情况和评论,其余任务附件也存入相应任务目录下
 
