@@ -316,7 +316,7 @@ function Board() {
   };
 
   return (
-    <>
+    <div className='container'>
       <div className={`left_area ${isExpanded ? 'expanded' : 'collapsed'}`}>
         <button className='expandedIcon' onClick={changeLeftAreaState}>
           <img src={expandedIcon} alt="Expand/Collapse Icon" className='expandedIconImg' />
@@ -437,7 +437,7 @@ function Board() {
           </button>
         </div>
       )}
-    </>
+    </div>
   );
 }
 
