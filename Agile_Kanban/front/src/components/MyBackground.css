@@ -1,0 +1,45 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #00d9ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.5rem;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.header {
+  margin: 0;
+  margin-top: -50px;
+  font-size: 2.5rem;
+  margin-left: -100px;
+}
+
+.logo {
+  margin-top: 1px;
+  width: 150px;
+  height: auto;
+  margin-left: -100px;
+}

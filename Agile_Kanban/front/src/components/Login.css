@@ -1,0 +1,47 @@
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    color: aqua;
+    width: 100px;
+    margin-right: 20px;
+    margin-left: 100px;
+    text-align: right;
+}
+
+.form-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 2px;
+}
+
+.isRegistering {
+    border: none;
+    outline: none;
+    font-size: xx-small;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: rgb(25, 0, 255);
+    cursor: pointer;
+    margin-top: 0px;
+    margin-left: 400px;
+}
+.isRegistering:hover {
+    color: rgb(143, 253, 10);
+}
+
+.isRegistering:focus {
+    outline: none;
+}
+
+.Login {
+    color: rgb(250, 250, 250);
+    margin-top: 20px;
+    margin-bottom: 1px;
+    margin-left: 180px;
+}

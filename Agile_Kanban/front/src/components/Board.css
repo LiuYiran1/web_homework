@@ -1,0 +1,323 @@
+.expandedIcon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.expandedIconImg {
+    width: 100%;
+    height: 100%;
+}
+
+.left_area {
+    width: 250px;
+    height: 90vh;
+    background-color: #3e3c3c;
+    border: 1px solid #87ff07;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(255, 242, 0, 0.1);
+    transition: width 0.3s;
+    position: relative;
+}
+
+.left_area.expanded {
+    width: 250px;
+}
+
+.left_area.collapsed {
+    width: 70px;
+}
+
+.projects_area {
+    width: 100%;
+    height: 78vh;
+    background-color: #3e3c3c;
+    border: 1px solid #07ffa8;
+    padding: 10px;
+    margin: 6px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.projects_menu {
+    width: 100%;
+    height: 5vh;
+    background-color: #3e3c3c;
+    border: 1px solid #07ffa8;
+    padding: 20px;
+    margin: 6px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.addProject {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #3e3c3c;
+}
+
+.every_project {
+    width: 100%;
+    height: 45px;
+    position: relative;
+    padding: 20px;
+    background-color: #3e3c3c;
+    border: 1px solid #07ffa8;
+    border-radius: 5px;
+    margin: 18px 0;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.every_project:hover {
+    background-color: #4b4a4a;
+}
+
+.every_project::after {
+    content: "双击以编辑";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.every_project:hover::after {
+    opacity: 1;
+}
+
+.project_name {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+
+.deletePopupButton {
+    background-color: #ff0202 !important;
+    color: rgb(247, 167, 167) !important;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+
+.deletePopupButton:hover {
+    background-color: #a40202 !important;
+}
+
+.editPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.editPopup h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.editPopup input[type='text'] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.editPopup button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.editPopup button:first-of-type {
+    background-color: #007bff;
+    color: white;
+}
+
+.editPopup button:last-of-type {
+    background-color: #6c757d;
+    color: white;
+}
+
+.right_area {
+    width: 920px;
+    height: 90vh;
+    background-color: #3e3c3c;
+    border: 1px solid #87ff07;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(255, 242, 0, 0.1);
+    transition: width 0.3s;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    overflow-y: auto;
+}
+
+.right_area.expanded {
+    width: 920px;
+}
+
+.right_area.collapsed {
+    width: 1100px;
+}
+
+.deregisterButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #00d9ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.5rem;
+    color: white;
+}
+
+.task_button {
+    position: absolute;
+    top: 20px;
+    width: 85%;
+}
+
+.input_task {
+    position: absolute;
+    top: 80px;
+    width: 85%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    box-sizing: border-box;
+}
+
+
+.task_list {
+    width: 85%;
+    margin-top: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.task_item {
+    background-color: #3e3c3c;
+    border: 1px solid #07ffa8;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 1rem;
+    box-sizing: border-box;
+    max-height: 200px;
+    overflow: auto;
+}
+
+.task_item:last-of-type {
+    margin-bottom: 0;
+}
+
+.task_delete_button {
+    margin-left: 600px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task_delete_button:hover {
+    background-color: #c62828;
+}
+
+.task_description {
+    display: inline-block;
+    max-width: 40px;
+    vertical-align: top;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.comments_section {
+    margin-top: 10px;
+}
+
+.comment {
+    background-color: #91789e;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+.input_comment {
+    margin-top: 5px;
+    padding: 5px;
+    width: calc(100% - 10px);
+}
+
+.comment_add_button {
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.input_file {
+    display: block;
+    margin-top: 90px;
+    margin-bottom: 0px;
+}
